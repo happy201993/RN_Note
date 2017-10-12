@@ -1,0 +1,9 @@
+__has_include("a.h")
+系统宏 判断头文件是否被引用。
+
+dispatch_group_enter(initModulesAndLoadSource);
+dispatch_group_leave(initModulesAndLoadSource);
+dispatch_group_notify(initModulesAndLoadSource, bridgeQueue, ^{
+    ...
+  });
+多任务，全部执行完后发出通知。
